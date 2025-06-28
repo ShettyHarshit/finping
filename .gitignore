@@ -1,39 +1,43 @@
+# Root
+.DS_Store
+Thumbs.db
+.env
+.env.*          # .env.local, .env.production etc.
+
+# Node modules (all folders)
+**/node_modules/
+
 # Logs
-**/logs
 **/*.log
+**/logs/
 **/npm-debug.log*
 **/pnpm-debug.log*
 
-# OS
-.DS_Store
-Thumbs.db
+# Dependency locks (optional if you want to force tracking)
+# Uncomment if you want Git to ignore lock files
+# **/package-lock.json
+# **/pnpm-lock.yaml
+# **/yarn.lock
 
-# Dependency directories
-**/node_modules/
-
-# Environment variables
-**/.env
-**/.env.local
-**/.env.development
-**/.env.production
-**/.env.test
-
-# Build output
+# Build outputs
 frontend/dist/
 backend/dist/
 
-# Cache
-**/.turbo/
-**/.cache/
-**/.vite/
-**/.next/
-**/.output/
-**/.eslintcache
+# Vite / React cache
+frontend/.vite/
+frontend/.cache/
+frontend/.turbo/
 
-# Editor settings
+# NestJS build artifacts
+backend/.cache/
+backend/.turbo/
+
+# Editor configs
 .vscode/
 .idea/
+*.swp
 
-# PM2
+# PM2 and process logs
 **/pids/
-**/p**
+**/p*
+**/pm2.log
