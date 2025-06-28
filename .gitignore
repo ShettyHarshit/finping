@@ -39,5 +39,4 @@ backend/.turbo/
 
 # PM2 and process logs
 **/pids/
-**/p*
 **/pm2.log
